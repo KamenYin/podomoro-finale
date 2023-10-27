@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Pomodoro Favicon.png" >  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 + 5 Clock</title>
+</head>
+<body>
+    <section id="header">
+        <h1 class="header-text">25 + 5 Clock</h1>
+    </section>
+    <article id="controller">
+    <div class="break-controls">
+        <h2 id="break-label">
+            Break Length
+        </h2>
+        <div class="element1">
+            <button type="button" id="break-increment"><i class="fa-solid fa-caret-up" style="color: #7539b1;"></i></button>
+            <span id="break-length"></span>
+            <button type="button" id="break-decrement"><i class="fa-solid fa-caret-down" style="color: #7539b1;"></i></button>
+        </div>
+        </div>
+        <div class="session-controls">
+            <h2 id="session-label">
+                Session Length
+            </h2>
+            <div class="element2">  
+                <button type="button" id="session-increment"><i class="fa-solid fa-caret-up" style="color: #7539b1;"></i></button>
+                <span id="session-length"></span>
+                <button type="button" id="session-decrement" ><i class="fa-solid fa-caret-down" style="color: #7539b1;"></i></button>
+            </div>
+
+    </div>
+</article>
+
+<article id="display">
+    <h2 id="timer-label">Session</h2>
+    <div id="time-left"></div> 
+    <div class="element3">
+        <button type="button" id="start_stop" class="butt-control"><i class="fa-solid fa-hourglass-half fa-spin" style="color: #7539b1;"></i></button>
+        <button type="button" id="reset" class="butt-control"><i class="fa-solid fa-clock-rotate-left fa-spin fa-spin-reverse"  style="color: #7539b1;"></i></button>
+    </div>
+    <audio id="beep">
+        <source src="Pennywise ha-ha-ha-3.mp3" type="audio/mp3">
+    </audio>
+</article>
+<script src="https://kit.fontawesome.com/105cc06d89.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script  type="text/javascript"  src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
